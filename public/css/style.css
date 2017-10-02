@@ -1,0 +1,21 @@
+html {
+   background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+
+.header {
+    text-align: center;
+    padding-top: 2em;
+    margin: 0;
+}
+
+.fog {
+    background: url(https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/Bf3yIBrJliuharc4o/carpathian-mountains-in-the-fog-mountain-aerial-view-mountain-landscape-in-the-fog-foggy-mountain-landscape-nature-foggy-morning-landscape-at-carpathian-mountains-ukraine-destinations-and-nature-4k_bwggeptfe_thumbnail-full01.png) no-repeat center center fixed;
+}
+
+.rain {
+    background: url(http://www.cepapkindir.com/uploads/posts/2013-02/1361310893_rainy-wallpapers-12.jpg);
+}
