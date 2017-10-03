@@ -10,6 +10,7 @@ if (window.navigator && window.navigator.geolocation) {
             console.log(data);
 
             selectBackground(data.weather[0].id);
+            selectIcon(data.weather[0].icon);
             document.getElementById('city').innerText = data.name;
 
 
@@ -25,8 +26,24 @@ function selectBackground(code) {
     if (code === 800 || (code < 958 && code >= 951)) {
         result = "clear";
     }
-      else if (code >= 500 && code < 600) {
+    else if (code >= 300 && code < 600) {
         result = "rain";
+    }
+    else if (code >= 900 && code < 907) {
+        result = "extreme";
+    }
+    else if (code >= 701 && code < 782) {
+        result = "fog";
+    }
+    else if (code >= 600 && code < 623) {
+        result = "snow";
+    }
+    else if (code >=200 && code < 300) {
+        result = "storm"
+    }
+
+    else if (code >= 800 && code < 805) {
+        result = "clouds"
     }
 
     console.log(result);
@@ -34,5 +51,9 @@ function selectBackground(code) {
     var background = document.querySelector('body');
     background.classList.add(result);
 
+}
+
+function selectIcon(icon) {
+    
 }
 

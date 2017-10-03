@@ -17,5 +17,25 @@ html {
 }
 
 .rain {
-    background: url(http://www.cepapkindir.com/uploads/posts/2013-02/1361310893_rainy-wallpapers-12.jpg);
+    background: url(https://wallpaperscraft.com/image/rain_drops_splashes_heavy_rain_dullness_bad_weather_60638_1920x1080.jpg) no-repeat center center fixed;
+}
+
+.clear {
+    background: url(http://www.cubatiempo.com/images/photos-lrg/Clear-sky-end-afternoon-west-Matanzas-city-Cuba-20170103-1080.jpg) no-repeat center center fixed;
+}
+
+.extreme {
+    background: url(http://cdn1.theodysseyonline.com/files/2016/01/16/6358857588839094111638939037_weather-enormous-rain-storm-clouds-dark-awesome.jpg) no-repeat center center fixed;
+}
+
+.snow {
+    background: url(https://i.ytimg.com/vi/RuqVnqNPyC0/maxresdefault.jpg) no-repeat center center fixed;
+}
+
+.storm {
+    background: url(http://www.wallpaperawesome.com/wallpapers-awesome/wallpapers-weather-clouds-tornado-rain-cyclone-flashlights-awesome/wallpaper-sea-lightning-weather.jpg) no-repeat center center fixed;
+}
+
+.clouds {
+    background: url(https://i.ytimg.com/vi/z2UDZMu2GLU/maxresdefault.jpg) no-repeat center center fixed;
 }
