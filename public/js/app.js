@@ -9,9 +9,17 @@ if (window.navigator && window.navigator.geolocation) {
         }).done(function(data) {
             console.log(data);
 
-            selectBackground(data.weather[0].id);
-            selectIcon(data.weather[0].icon);
             document.getElementById('city').innerText = data.name;
+
+
+            selectBackground(data.weather[0].id);
+
+            document.getElementById('temperature').innerText = data.main.temp;
+
+            selectIcon(data.weather[0].icon);
+
+
+
 
 
         })
@@ -54,6 +62,8 @@ function selectBackground(code) {
 }
 
 function selectIcon(icon) {
-    
+
+    document.getElementById('icon').src = "http://openweathermap.org/img/w/" + icon + ".png";
+
 }
 
