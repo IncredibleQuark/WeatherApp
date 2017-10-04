@@ -11,16 +11,12 @@ if (window.navigator && window.navigator.geolocation) {
 
             document.getElementById('city').innerText = data.name;
 
-
             selectBackground(data.weather[0].id);
 
             document.getElementById('temperature').innerText = data.main.temp;
+            document.getElementById('description').innerText = data.weather[0].main;
 
             selectIcon(data.weather[0].icon);
-
-
-
-
 
         })
     })
@@ -53,8 +49,6 @@ function selectBackground(code) {
     else if (code >= 800 && code < 805) {
         result = "clouds"
     }
-
-    console.log(result);
 
     var background = document.querySelector('body');
     background.classList.add(result);
