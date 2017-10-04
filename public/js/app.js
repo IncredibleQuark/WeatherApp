@@ -14,7 +14,9 @@ if (window.navigator && window.navigator.geolocation) {
             selectBackground(data.weather[0].id);
 
             document.getElementById('temperature').innerText = data.main.temp;
-            document.getElementById('description').innerText = data.weather[0].main;
+
+            var desc = data.weather[0].description;
+            document.getElementById('description').innerText = desc[0].toUpperCase() + desc.slice(1);
 
             selectIcon(data.weather[0].icon);
 
