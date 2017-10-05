@@ -30,6 +30,11 @@ html {
 
 }
 
+
+#degree:hover {
+    color: red;
+}
+
 .headers {
     text-align: center;
     padding-top: 2em;
