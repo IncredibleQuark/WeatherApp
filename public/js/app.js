@@ -14,7 +14,7 @@ if (window.navigator && window.navigator.geolocation) {
         }).done(function(data) {
             console.log(data);
 
-            tempDiv.innerText = data.name;
+            document.getElementById('city').innerText = data.name;
 
             selectBackground(data.weather[0].id);
 
